@@ -1,15 +1,14 @@
 function anagrama(a,b){
     let cont = 0
-    let lstA = []
-    let lstB = []
-    lstA.split(a)
-    lstB.split(b)
-    lstA.forEach(i => {
-        if (i == lstB[lstA.indexOf(i)]){
-            cont +=1
-        }
-    return (length(a)==cont && length(b)==cont)
-    });
+    let igual = 0
+    if (a.lenght == b.lenght && a != b){
+        let lstA = (a.split("")).sort()
+        let lstB = (b.split("")).sort()
+        lstA.forEach(i => {
+        if (i == lstB[cont]){
+            igual +=1}
+        cont +=1});  
+    }
+    return (b.length==igual && a.length==igual)
 }
-
-anagrama("lana","alan")
+console.log(anagrama("lena","alan")) 

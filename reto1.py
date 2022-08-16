@@ -1,13 +1,14 @@
 def anagrama(a,b):
+    cont = 0
+    igual = 0
     if len(a) == len(b) and a != b:
-        cont = 0
         lstA = sorted((list(a)))
         lstB = sorted((list(b)))
         for i in lstA:
-            if i == lstB[lstA.index(i)]:
-                cont +=1
-        return cont == len(a) and cont == len(b)     
-    else:
-        return False
+            if i == lstB[cont]:
+                igual +=1
+            cont +=1
+    return igual == len(a) and igual == len(b)     
 
-print(anagrama("alan", "lana"))
+
+print(anagrama("aann", "anna"))
