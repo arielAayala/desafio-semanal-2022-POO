@@ -7,10 +7,12 @@ function anagrama($a,$b){
         $lstB = sort(str_split($b));
         foreach($lstA as $i){
             if($i == $lstB[$cont]){
-                $igual +=1;}
-            $cont +=1;}
-            ;}
+                $igual +=1;
+            }
+            $cont +=1;
+        }
+    }
     return (strlen($a) == $igual and strlen($b)== $igual);
 };
-  echo (anagrama("alan","lana"));
+echo (anagrama("alan","lana"));
 ?>
