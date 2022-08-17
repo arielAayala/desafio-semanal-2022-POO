@@ -9,8 +9,8 @@ while($cont < 50){
         $suma = $num[cont-1] + $num[cont-2];
         array_push($num,$suma);
         echo($suma);
-        echo(" - ");
     }
     $cont+=1;
+    echo(" - ");
 }
 ?>

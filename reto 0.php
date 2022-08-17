@@ -10,6 +10,6 @@ while($num <=100 ){
     }else{
         echo($num);
     }
-    echo("<br>");
+    echo(" - ");
     $num +=1;
 }?>
