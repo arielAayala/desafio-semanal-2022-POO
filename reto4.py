@@ -4,9 +4,5 @@
 #- Imprime el cálculo del área de un polígono de cada tipo.
 
 
-def areaPoligono(alto,ancho):
-    print(f"{(alto*ancho)/2} area de triangulo")
-    print(f"{alto*2} area de cuadrado")
-    print(f"{alto*ancho} area de rectangulo")
-
-areaPoligono(2, 4)
+def areaPoligono(poligono):
+    pass
