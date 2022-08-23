@@ -5,4 +5,19 @@
 
 
 def areaPoligono(poligono):
-    pass
+    if poligono == "triangulo" :
+        alto = float(input(f"largo del {poligono}: "))
+        ancho = float(input(f"ancho del {poligono}: "))
+        calculo = (alto * ancho)/2
+    elif poligono == "rectangulo":
+        alto = float(input(f"largo del {poligono}: "))
+        ancho = float(input(f"ancho del {poligono}: "))
+        calculo = alto * ancho
+    elif poligono == "cuadrado":
+        lado = float(input(f"lado del {poligono}: "))
+        calculo = lado * 4 
+    else:
+        print("error")
+    print(f"el area del {poligono} es: {calculo}")
+
+areaPoligono("triangulo")
