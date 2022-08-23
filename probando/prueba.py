@@ -6,8 +6,8 @@ from fractions import Fraction
 url = "https://fondosmil.com/fondo/29363.jpg"
 def calcularRatio(url):
     img_data = requests.get(url).content
-    with open('image.jpg', 'wb') as handler:
-        handler.write(img_data)
+    with open('image.jpg', 'wb') as archivo:
+        archivo.write(img_data)
 
     img = cv2.imread('image.jpg', cv2.IMREAD_UNCHANGED)
     
