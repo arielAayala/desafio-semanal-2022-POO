@@ -11,7 +11,7 @@ morse = {
 "v":"...-","w":".--","x":"-..-",
 "y":"-.--","z":"--.."}
 
-texto = "Aru"
+texto = "hola como estas"
 
 def traducir(text):
     text = text.strip()
