@@ -1,14 +1,9 @@
 class Palindromo{
-    constructor(palabra){
-        this.palabra = palabra
-    }
-    esPalindromo(){
-        let reversedWord = this.palabra.split("").reverse().join()
-        console.log(reversedWord)
-        console.log(this.palabra)
-        return reversedWord == this.palabra
+    esPalindromo(palabra){
+        let reversedWord = palabra.split("").reverse().join("")
+        return reversedWord.toLowerCase() == palabra.toLowerCase()
     }
 }
-let palabra1 = new Palindromo("neuquen")
+let palabra1 = new Palindromo()
 
-palabra1.esPalindromo()
+console.log(palabra1.esPalindromo("hola aloH")) 
